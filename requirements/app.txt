@@ -23,3 +23,5 @@ urllib3==1.26.12
 uwsgi==2.0.20
 werkzeug==2.2.2
 wtforms==3.0.1
+redis
+psycopg2
