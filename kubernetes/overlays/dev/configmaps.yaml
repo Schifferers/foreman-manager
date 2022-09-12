@@ -11,6 +11,6 @@ data:
     MANAGER_URL: http://manager.foreman.svc.cluster.local:5001
     RASA_URL: http://rasa.foreman.svc.cluster.local:8080
     SENTRY_ENV: Development
-    PGHOST: postgres.internal.dev.pilgrimagesoftware.com
+    DB_HOST: postgres.internal.dev.pilgrimagesoftware.com
     REDIS_HOST: redis.foreman.svc.cluster.local
     DEBUG: "True"
