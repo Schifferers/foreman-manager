@@ -1,0 +1,22 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: foreman
+
+resources:
+    - ../../base
+    - configmaps.yaml
+    - hpa.yaml
+    - pdb.yaml
+    - secrets.yaml
+patchesStrategicMerge:
+    - replicas.yaml
+
+commonLabels:
+    app: chatbot
+    version: v1
+    platform: foreman
+
+generatorOptions:
+    disableNameSuffixHash: true

@@ -1,0 +1,129 @@
+servers:
+  - id: lotr
+    name: Lord of the Rings
+    path: /servers/lotr
+    info:
+      hostname: minas-ithil.local
+      version: "1.7.10"
+      port: 25565
+    users:
+      allowed:
+        - "U0619MN68"
+        - "U061J6LKH"
+      denied: []
+    actions:
+      start:
+        script: /scripts/start-server.sh lotr
+      stop:
+        script: /scripts/stop-server.sh lotr
+      status:
+        script: /scripts/server-status.sh lotr
+      upgrade:
+        script: /servers/lotr/upgrade.sh
+        users:
+          allowed:
+            - "U0619MN68"
+  - id: vanilla
+    name: Vanilla Minecraft
+    path: /servers/vanilla
+    info:
+      hostname: minas-ithil.local
+      version: "1.15.2"
+      port: 25565
+    actions:
+      start:
+        script: /scripts/start-server.sh vanilla
+      stop:
+        script: /scripts/stop-server.sh vanilla
+      status:
+        script: /scripts/server-status.sh vanilla
+      upgrade:
+        script: /scripts/fetch-server.sh -t release
+        users:
+          allowed:
+            - "U0619MN68"
+      reset:
+        script: /scripts/reset-server.sh
+        users:
+          allowed:
+            - "U0619MN68"
+  - id: kids
+    name: Kids Safe Minecraft
+    path: /servers/kids
+    info:
+      hostname: minas-ithil.local
+      version: "1.15.2"
+      port: 25565
+    actions:
+      start:
+        script: /scripts/start-server.sh kids
+      stop:
+        script: /scripts/stop-server.sh kids
+      status:
+        script: /scripts/server-status.sh kids
+      upgrade:
+        script: /scripts/fetch-server.sh -t release
+        users:
+          allowed:
+            - "U0619MN68"
+      reset:
+        script: /scripts/reset-server.sh
+        users:
+          allowed:
+            - "U0619MN68"
+  - id: snapshot
+    name: Snapshot
+    path: /servers/snapshot
+    info:
+      hostname: minas-ithil.local
+      version: "?"
+      port: 25565
+    actions:
+      start:
+        script: /scripts/start-server.sh snapshot
+      stop:
+        script: /scripts/stop-server.sh snapshot
+      status:
+        script: /scripts/server-status.sh snapshot
+      upgrade:
+        script: /scripts/fetch-server.sh -t snapshot -s g
+        users:
+          allowed:
+            - "U0619MN68"
+      reset:
+        script: reset.sh
+        users:
+          allowed:
+            - "U0619MN68"
+  - id: hardcore
+    name: Teddy's hardcore server
+    path: /servers/hardcore
+    info:
+      hostname: minas-ithil.local
+      version: "1.15.2"
+      port: 25565
+    users:
+      allowed:
+        - "U0619MN68"
+        - "U061J6LKH"
+      denied: []
+    actions:
+      start:
+        script: /scripts/start-server.sh hardcore
+      stop:
+        script: /scripts/stop-server.sh hardcore
+        users:
+          allowed:
+            - "U0619MN68"
+      status:
+        script: /scripts/server-status.sh hardcore
+      upgrade:
+        script: /scripts/fetch-server.sh -t release -H -s g
+        users:
+          allowed:
+            - "U0619MN68"
+      reset:
+        script: /scripts/reset-server.sh
+        users:
+          allowed:
+            - "U0619MN68"

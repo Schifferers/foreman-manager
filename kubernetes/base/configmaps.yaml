@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+    name: manager-common
+
+data:
+    FLASK_PORT: "5001"
+    FLASK_APP: minecraft_manager.main:create_app
+    FLASK_ENV: development
+    NEW_RELIC_CONFIG_FILE: /config/newrelic.ini
+    REDIS_DB: "6"
+    DB_USER: foreman
+    DB_NAME: foreman
+    REDIS_PORT: "6379"
+    SERVERS_FILE: /app/config/servers.yaml

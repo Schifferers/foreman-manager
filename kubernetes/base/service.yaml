@@ -1,0 +1,17 @@
+---
+kind: Service
+apiVersion: v1
+
+metadata:
+    name: manager
+
+spec:
+    selector:
+        app: manager
+        version: v1
+        platform: foreman
+    type: LoadBalancer
+    ports:
+        - name: http
+          port: 5001
+          targetPort: http

@@ -1,0 +1,8 @@
+slackclient
+python-dotenv
+pyyaml
+jsonpath-rw
+requests
+sentry-sdk
+pip-tools==6.8.0
+black

@@ -1,0 +1,8 @@
+slackclient
+python-dotenv
+pyyaml
+jsonpath-rw
+requests
+sentry-sdk
+uwsgi
+hiredis

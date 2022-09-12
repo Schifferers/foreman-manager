@@ -1,0 +1,10 @@
+flask
+flask-dotenv
+flask-sqlalchemy
+flask-session
+pyyaml
+uwsgi
+sentry-sdk[flask]==1.9.2
+python-dotenv
+flask-inputs
+jsonschema
