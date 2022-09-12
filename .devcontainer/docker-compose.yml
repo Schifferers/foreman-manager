@@ -26,17 +26,19 @@ services:
         networks:
             - foreman
 
-    rasa:
-        image: rasa
+    db:
+        image: postgres:13-alpine
         restart: unless-stopped
 
         ports:
-            - 5005:5005
+            - 5432:5432
         expose:
-            - "5005"
+            - "5432"
 
         environment:
-            - X=y
+            - POSTGRES_USER=foreman
+            - POSTGRES_DB=foreman
+            - POSTGRES_PASSWORD=foreman
 
         networks:
             - foreman
