@@ -6,7 +6,7 @@ metadata:
     name: manager-env
 
 data:
-    PORT: "5000"
+    PORT: "5001"
     BUILD_INFO_PATH: /app/build-info.json
     MANAGER_URL: http://manager.foreman.svc.cluster.local:5001
     RASA_URL: http://rasa.foreman.svc.cluster.local:8080
