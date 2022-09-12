@@ -14,7 +14,7 @@ patchesStrategicMerge:
     - replicas.yaml
 
 commonLabels:
-    app: chatbot
+    app: manager
     version: v1
     platform: foreman
 
