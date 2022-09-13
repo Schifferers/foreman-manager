@@ -26,7 +26,7 @@ spec:
         spec:
             serviceAccountName: manager
             imagePullSecrets:
-                - name: schifferers-registry
+                - name: registry
             containers:
                 - name: app
                   image: ghcr.io/schifferers/foreman-manager:latest
