@@ -55,6 +55,7 @@ jobs:
               with:
                   images: |
                       ghcr.io/schifferers/foreman-manager
+                      paulyhedral/foreman-manager
                   tags: |
                       type=raw,value=latest
                       type=raw,value=${{ steps.previoustag.outputs.tag }}
