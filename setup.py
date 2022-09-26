@@ -10,7 +10,7 @@ setup(
         "flask-session",
         "pyyaml",
         "uwsgi",
-        "sentry-sdk[flask]==1.9.8",
+        "sentry-sdk[flask]==1.9.9",
         "python-dotenv",
         "flask-inputs",
         "jsonschema",
