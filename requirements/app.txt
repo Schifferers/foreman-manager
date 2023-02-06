@@ -9,7 +9,7 @@ flask==2.2.2
 flask-dotenv==0.1.2
 flask-inputs==0.3.0
 flask-session==0.4.0
-flask-sqlalchemy==2.5.1
+flask-sqlalchemy==3.0.3
 future==0.18.2
 greenlet==1.1.3
 itsdangerous==2.1.2
