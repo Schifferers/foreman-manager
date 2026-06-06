@@ -14,9 +14,9 @@ colorama==0.4.6
 commonmark==0.9.1
 coverage[toml]==7.2.1
 coverage-badge==1.1.0
-distlib==0.3.6
+distlib==0.4.1
 docutils==0.18.1
-filelock==3.9.0
+filelock==3.29.1
 flask==2.2.3
 flask-dotenv==0.1.2
 flask-inputs==0.3.0
@@ -36,7 +36,7 @@ packaging==23.0
 pallets-sphinx-themes==2.0.3
 pathspec==0.11.0
 pip-tools==6.12.3
-platformdirs==3.1.0
+platformdirs==4.10.0
 pluggy==1.0.0
 psycopg2==2.9.5
 py==1.11.0
@@ -74,7 +74,7 @@ types-docutils==0.19.1.6
 typing-extensions==4.5.0
 urllib3==1.26.14
 uwsgi==2.0.21
-virtualenv==20.20.0
+virtualenv==20.36.1
 werkzeug==2.2.3
 wheel==0.38.4
 wtforms==3.0.1
