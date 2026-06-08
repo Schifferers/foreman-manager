@@ -23,7 +23,7 @@ pyrsistent==0.18.1
 python-dotenv==0.21.0
 pyyaml==6.0.3
 redis==4.3.4
-sentry-sdk[flask]==1.9.9
+sentry-sdk[flask]==2.62.0
 sqlalchemy==1.4.41
 urllib3==1.26.12
 uwsgi==2.0.20
